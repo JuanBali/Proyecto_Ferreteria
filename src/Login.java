@@ -18,12 +18,13 @@ import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JButton;
+import javax.swing.JPasswordField;
 
 public class Login extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTextField textField_1;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -47,7 +48,7 @@ public class Login extends JFrame {
 	 */
 	public Login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 552, 362);
+		setBounds(100, 100, 611, 412);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(176, 224, 230));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -59,8 +60,8 @@ public class Login extends JFrame {
 		lblUsuario.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblUsuario);
 		
-		JLabel lblContrasea = new JLabel("ContraseÃ±a:");
-		lblContrasea.setBounds(145, 183, 186, 56);
+		JLabel lblContrasea = new JLabel("Contraseña:");
+		lblContrasea.setBounds(109, 185, 211, 56);
 		lblContrasea.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblContrasea);
 		
@@ -68,11 +69,6 @@ public class Login extends JFrame {
 		textField.setBounds(333, 132, 175, 35);
 		contentPane.add(textField);
 		textField.setColumns(10);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(333, 200, 175, 35);
-		textField_1.setColumns(10);
-		contentPane.add(textField_1);
 		
 		JLabel label = new JLabel("");
 		label.setBounds(11, 112, 122, 129);
@@ -90,5 +86,9 @@ public class Login extends JFrame {
 		btnIngresar.setBounds(188, 262, 186, 61);
 		btnIngresar.setFont(new Font("Verdana", Font.ITALIC, 22));
 		contentPane.add(btnIngresar);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(335, 185, 175, 35);
+		contentPane.add(passwordField);
 	}
 }
