@@ -89,7 +89,7 @@ public class Login extends JFrame {
 			
 			public void actionPerformed(ActionEvent e) {
 			if(Metodos.esVacio(user.getText())||Metodos.tieneEspacio(user.getText())){
-				
+				System.out.println("no pude quedar vacio gil");
 			}
 			
 			}
