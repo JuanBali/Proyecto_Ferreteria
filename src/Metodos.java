@@ -10,6 +10,7 @@ final public class Metodos {
 	//Devuelve 'true' si todos los caracteres del
 	//string son espacios o esta vacio.
 	public static boolean esVacio(String str){
+<<<<<<< HEAD
 
 		return str.isEmpty();
 	
@@ -22,5 +23,12 @@ final public class Metodos {
 				return true;
 		}
 		return false;
+=======
+		for(int i = 0; i < str.length(); ++i){
+			if(str.charAt(i) != ' ')
+				return false;
+		}
+		return str.isEmpty();
+>>>>>>> refs/remotes/origin/master
 	}
 }
