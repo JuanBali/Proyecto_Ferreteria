@@ -7,7 +7,13 @@ final public class Metodos {
 	//instanciar una clase estatica
 	private Metodos(){ }
 	
+	//Devuelve 'true' si todos los caracteres del
+	//string son espacios o esta vacio.
 	public static boolean esVacio(String str){
-		return str.trim().isEmpty();
+		for(int i = 0; i < str.length(); ++i){
+			if(str.charAt(i) != ' ')
+				return false;
+		}
+		return str.isEmpty();
 	}
 }
