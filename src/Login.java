@@ -47,7 +47,7 @@ public class Login extends JFrame {
 	 */
 	public Login() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 552, 362);
+		setBounds(100, 100, 607, 391);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(176, 224, 230));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -55,22 +55,22 @@ public class Login extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblUsuario = new JLabel("Usuario:");
-		lblUsuario.setBounds(151, 122, 135, 43);
+		lblUsuario.setBounds(161, 122, 135, 43);
 		lblUsuario.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblUsuario);
 		
-		JLabel lblContrasea = new JLabel("ContraseÃ±a:");
-		lblContrasea.setBounds(145, 183, 186, 56);
+		JLabel lblContrasea = new JLabel("Contraseña:");
+		lblContrasea.setBounds(161, 181, 201, 56);
 		lblContrasea.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblContrasea);
 		
 		textField = new JTextField();
-		textField.setBounds(333, 132, 175, 35);
+		textField.setBounds(376, 131, 175, 35);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(333, 200, 175, 35);
+		textField_1.setBounds(376, 199, 175, 35);
 		textField_1.setColumns(10);
 		contentPane.add(textField_1);
 		
