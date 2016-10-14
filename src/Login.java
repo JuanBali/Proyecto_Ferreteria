@@ -19,6 +19,8 @@ import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Login extends JFrame {
 
@@ -83,6 +85,14 @@ public class Login extends JFrame {
 		contentPane.add(lblIngreseASu);
 		
 		JButton btnIngresar = new JButton("Ingresar");
+		btnIngresar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(Metodos.esVacio(user.getText())){
+					System.out.println("no puede quedar vacio");
+				}
+				
+			}
+		});
 		btnIngresar.setBounds(188, 262, 186, 61);
 		btnIngresar.setFont(new Font("Verdana", Font.ITALIC, 22));
 		contentPane.add(btnIngresar);
