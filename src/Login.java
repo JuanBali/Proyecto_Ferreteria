@@ -62,7 +62,11 @@ public class Login extends JFrame {
 		lblUsuario.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblUsuario);
 		
+<<<<<<< HEAD
 		JLabel lblContrasea = new JLabel("Contrase�a:");
+=======
+		JLabel lblContrasea = new JLabel("Contrasena:");
+>>>>>>> refs/remotes/origin/master
 		lblContrasea.setBounds(161, 181, 201, 56);
 		lblContrasea.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblContrasea);
@@ -86,6 +90,7 @@ public class Login extends JFrame {
 		
 		JButton btnIngresar = new JButton("Ingresar");
 		btnIngresar.addActionListener(new ActionListener() {
+<<<<<<< HEAD
 			
 			public void actionPerformed(ActionEvent e) {
 			if(Metodos.esVacio(user.getText())||Metodos.tieneEspacio(user.getText())){
@@ -93,6 +98,14 @@ public class Login extends JFrame {
 			}
 			
 			}
+=======
+			public void actionPerformed(ActionEvent e) {
+				if(Metodos.esVacio(user.getText())){
+					System.out.println("no puede quedar vacio");
+				}
+				
+			}
+>>>>>>> refs/remotes/origin/master
 		});
 		btnIngresar.setBounds(188, 262, 186, 61);
 		btnIngresar.setFont(new Font("Verdana", Font.ITALIC, 22));
