@@ -18,12 +18,15 @@ import javax.swing.JTextField;
 import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JButton;
+import javax.swing.JPasswordField;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Login extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField user;
+	private JPasswordField pass;
 
 	/**
 	 * Launch the application.
@@ -59,20 +62,15 @@ public class Login extends JFrame {
 		lblUsuario.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblUsuario);
 		
-		JLabel lblContrasea = new JLabel("Contraseña:");
+		JLabel lblContrasea = new JLabel("Contraseï¿½a:");
 		lblContrasea.setBounds(161, 181, 201, 56);
 		lblContrasea.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblContrasea);
 		
-		textField = new JTextField();
-		textField.setBounds(376, 131, 175, 35);
-		contentPane.add(textField);
-		textField.setColumns(10);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(376, 199, 175, 35);
-		textField_1.setColumns(10);
-		contentPane.add(textField_1);
+		user = new JTextField();
+		user.setBounds(376, 131, 175, 35);
+		contentPane.add(user);
+		user.setColumns(10);
 		
 		JLabel label = new JLabel("");
 		label.setBounds(11, 112, 122, 129);
@@ -87,8 +85,21 @@ public class Login extends JFrame {
 		contentPane.add(lblIngreseASu);
 		
 		JButton btnIngresar = new JButton("Ingresar");
+		btnIngresar.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+			if(Metodos.esVacio(user.getText())||Metodos.tieneEspacio(user.getText())){
+				
+			}
+			
+			}
+		});
 		btnIngresar.setBounds(188, 262, 186, 61);
 		btnIngresar.setFont(new Font("Verdana", Font.ITALIC, 22));
 		contentPane.add(btnIngresar);
+		
+		pass = new JPasswordField();
+		pass.setBounds(374, 189, 175, 35);
+		contentPane.add(pass);
 	}
 }
