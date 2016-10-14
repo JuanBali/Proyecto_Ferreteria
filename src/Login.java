@@ -76,7 +76,7 @@ public class Login extends JFrame {
 		
 		JLabel label = new JLabel("");
 		label.setBounds(11, 112, 122, 129);
-		label.setIcon(new ImageIcon("login.png"));
+		label.setIcon(new ImageIcon("/Users/agustinintroini/Desktop/Proyecto ferreteria/login.png"));
 		contentPane.add(label);
 		
 		JLabel lblIngreseASu = new JLabel("Ingrese a su cuenta:");
