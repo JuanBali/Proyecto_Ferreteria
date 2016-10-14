@@ -16,4 +16,13 @@ final public class Metodos {
 		}
 		return str.isEmpty();
 	}
+	
+	
+	//Devuelve 'true' si hay un caracter ' '
+	public static boolean tieneEspacio(String str){
+		for(int i = 0; i < str.length(); ++i){
+			if(str.charAt(i) == ' ') return true;
+		}
+		return false;
+	}
 }
