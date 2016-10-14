@@ -59,7 +59,7 @@ public class Login extends JFrame {
 		lblUsuario.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblUsuario);
 		
-		JLabel lblContrasea = new JLabel("ContraseÃ±a:");
+		JLabel lblContrasea = new JLabel("Contraseña:");
 		lblContrasea.setBounds(145, 183, 186, 56);
 		lblContrasea.setFont(new Font("Verdana", Font.BOLD, 26));
 		contentPane.add(lblContrasea);
